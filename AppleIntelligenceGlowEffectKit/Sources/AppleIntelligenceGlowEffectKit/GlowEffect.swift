@@ -105,11 +105,3 @@ func generateGradientStops(offset: Int) -> [Gradient.Stop] {
 }
 
 
-#Preview("GradientLine") {
-    GradientLine(gradientStops: generateGradientStops(offset: 0), lineWidth: 20, cornerRadius: 30)
-}
-
-#Preview("BlurredGradientLine") {
-    BlurredGradientLine(gradientStops: generateGradientStops(offset: 0), lineWidth: 20, cornerRadius: 30, blurRadius: 20)
-}
-
