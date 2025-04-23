@@ -4,7 +4,6 @@
 //
 //  Created by Adam Różyński on 23/04/2025.
 //
-#if canImport(AppKit)
 
 import SwiftUI
 
@@ -93,10 +92,16 @@ private let baseColors: [Color] = [
 func generateGradientStops(offset: Int) -> [Gradient.Stop] {
     let count = baseColors.count
     return (0..<count).map { i in
-        let color    = baseColors[abs(i - offset) % count]     // rotate palette
-        let location = Double(i) / Double(count)            // even spacing
+        let color    = baseColors[abs(i - offset) % count]     
+        let location = Double(i) / Double(count)
         return Gradient.Stop(color: color, location: location)
     }
+}
+
+
+#Preview("GlowEffect") {
+    GlowEffect(lineWidth: 4, cornerRadius: 10, blurRadius: 4)
+        .frame(width: 80, height: 80)
 }
 
 
@@ -108,10 +113,3 @@ func generateGradientStops(offset: Int) -> [Gradient.Stop] {
     BlurredGradientLine(gradientStops: generateGradientStops(offset: 0), lineWidth: 20, cornerRadius: 30, blurRadius: 20)
 }
 
-#Preview("GlowEffect") {
-    GlowEffect(lineWidth: 4, cornerRadius: 10, blurRadius: 4)
-        .frame(width: 80, height: 80)
-}
-
-
-#endif
