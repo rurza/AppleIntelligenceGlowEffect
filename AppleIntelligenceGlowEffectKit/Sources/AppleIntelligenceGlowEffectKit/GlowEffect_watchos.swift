@@ -1,3 +1,5 @@
+#if canImport(WatchKit)
+
 import SwiftUI
 import WatchKit
 
@@ -122,23 +124,6 @@ struct EffectNoBlur: View {
     }
 }
 
-// MARK: Color extension that converts HEX values into RGB for SwiftUI
-extension Color {
-    init(hex: String) {
-        let scanner = Scanner(string: hex)
-        _ = scanner.scanString("#")
-
-        var hexNumber: UInt64 = 0
-        scanner.scanHexInt64(&hexNumber)
-
-        let r = Double((hexNumber & 0xff0000) >> 16) / 255
-        let g = Double((hexNumber & 0x00ff00) >> 8) / 255
-        let b = Double(hexNumber & 0x0000ff) / 255
-
-        self.init(red: r, green: g, blue: b)
-    }
-}
-
 // MARK: Screen Dimension and Offset Constants
 struct DeviceConfig {
     static let width = WKInterfaceDevice.current().screenBounds.width
@@ -172,3 +157,5 @@ struct DeviceConfig {
 #Preview {
     GlowEffect(freeze: false) // Toggle `freeze` to test behavior
 }
+
+#endif
