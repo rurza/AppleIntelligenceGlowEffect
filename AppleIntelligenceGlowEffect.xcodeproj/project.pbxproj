@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66E594BC2DB98BAD0084D039 /* AppleIntelligenceGlowEffectKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66E594BB2DB98BAD0084D039 /* AppleIntelligenceGlowEffectKit */; };
+		66E594BF2DB9A0DB0084D039 /* AppleIntelligenceGlowEffectUI in Frameworks */ = {isa = PBXBuildFile; productRef = 66E594BE2DB9A0DB0084D039 /* AppleIntelligenceGlowEffectUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E594BC2DB98BAD0084D039 /* AppleIntelligenceGlowEffectKit in Frameworks */,
+				66E594BF2DB9A0DB0084D039 /* AppleIntelligenceGlowEffectUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			);
 			name = AppleIntelligenceGlowEffect;
 			packageProductDependencies = (
-				66E594BB2DB98BAD0084D039 /* AppleIntelligenceGlowEffectKit */,
+				66E594BE2DB9A0DB0084D039 /* AppleIntelligenceGlowEffectUI */,
 			);
 			productName = AppleIntelligenceGlowEffect;
 			productReference = 66E594A32DB98AAA0084D039 /* AppleIntelligenceGlowEffect.app */;
@@ -335,9 +335,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		66E594BB2DB98BAD0084D039 /* AppleIntelligenceGlowEffectKit */ = {
+		66E594BE2DB9A0DB0084D039 /* AppleIntelligenceGlowEffectUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = AppleIntelligenceGlowEffectKit;
+			productName = AppleIntelligenceGlowEffectUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

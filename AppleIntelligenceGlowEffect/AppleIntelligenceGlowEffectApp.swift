@@ -5,7 +5,7 @@
 //  Created by Adam Różyński on 23/04/2025.
 //
 
-import AppleIntelligenceGlowEffectKit
+import AppleIntelligenceGlowEffectUI
 import SwiftUI
 
 @main
