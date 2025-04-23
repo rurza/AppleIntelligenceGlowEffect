@@ -13,6 +13,7 @@
 /* Begin PBXFileReference section */
 		66E594A32DB98AAA0084D039 /* AppleIntelligenceGlowEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleIntelligenceGlowEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E594B92DB98BA60084D039 /* AppleIntelligenceGlowEffectKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppleIntelligenceGlowEffectKit; sourceTree = "<group>"; };
+		66E594BD2DB99FED0084D039 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,6 +39,7 @@
 		66E5949A2DB98AAA0084D039 = {
 			isa = PBXGroup;
 			children = (
+				66E594BD2DB99FED0084D039 /* README.md */,
 				66E594B92DB98BA60084D039 /* AppleIntelligenceGlowEffectKit */,
 				66E594A52DB98AAA0084D039 /* AppleIntelligenceGlowEffect */,
 				66E594BA2DB98BAD0084D039 /* Frameworks */,
