@@ -26,7 +26,6 @@ public struct GlowEffect: View {
 
     public var body: some View {
         ZStack {
-            GradientLine(gradientStops: gradientStops, lineWidth: lineWidth / 5, cornerRadius: cornerRadius)
             BlurredGradientLine(gradientStops: gradientStops, lineWidth: lineWidth / 3, cornerRadius: cornerRadius, blurRadius: blurRadius / 3)
             BlurredGradientLine(gradientStops: gradientStops, lineWidth: lineWidth / 2, cornerRadius: cornerRadius, blurRadius: blurRadius / 2)
             BlurredGradientLine(gradientStops: gradientStops, lineWidth: lineWidth, cornerRadius: cornerRadius, blurRadius: blurRadius)
@@ -36,25 +35,6 @@ public struct GlowEffect: View {
             withAnimation(.linear(duration: 0.6)) {
                 offset += 1
             }
-        }
-    }
-}
-
-struct GradientLine: View {
-    let gradientStops: [Gradient.Stop]
-    let lineWidth: CGFloat
-    let cornerRadius: CGFloat
-
-    var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: cornerRadius)
-                .strokeBorder(
-                    AngularGradient(
-                        gradient: Gradient(stops: gradientStops),
-                        center: .center
-                    ),
-                    lineWidth: lineWidth
-                )
         }
     }
 }
