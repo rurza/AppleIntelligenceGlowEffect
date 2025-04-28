@@ -12,7 +12,10 @@ import SwiftUI
 struct AppleIntelligenceGlowEffectApp: App {
     var body: some Scene {
         WindowGroup {
-            GlowEffect(lineWidth: 20, cornerRadius: 20, blurRadius: 20)
+            ZStack {
+                Rectangle()
+                GlowEffect(lineWidth: 20, cornerRadius: 20, blurRadius: 20)
+            }
         }
     }
 }
